@@ -617,3 +617,209 @@ footer{
     color: #ff3399;
     font-weight: bold;
 }
+
+#modal-form1{
+    border-radius: 20px;
+    border: 2px solid #FFFFFF;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+#modal-form2{
+    border-radius: 20px;
+    border: 2px solid #FFFFFF;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+.adopt-form-container{
+    width: 20vw;
+    height: 100%;
+}
+
+.adopt-form-container h1{
+    color: #1E1F27;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.obrigatorio{
+    color: #3F96FC;
+}
+
+.adopt-modal-form input{
+    margin-top: 1vh;
+    display: block;
+    width: calc(100% - 10px);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #3F96FC;
+}
+
+.adopt-modal-form label{
+    color: #FF3D9A;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+.dob-container select{
+    margin-top: 1vh;
+    border: 1px solid #3F96FC;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 2vh;
+}
+
+.adopt-modal-form .checkbox-container input{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.adopt-modal-form input[type="checkbox"] {
+    display: none;
+}
+
+.adopt-modal-form input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.adopt-modal-form input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #37383F;
+    border-radius: 50%; /* Faz a borda circular */
+    background-color: #37383F;
+}
+
+#adopt-button3{
+    background-color: #04C27F;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 2.5vh;
+}
+
+#cancel-button{
+    background-color: #37383F;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 1.5vh;
+}
+
+.donate-form-container{
+    font-weight: bolder;
+    width: 20vw;
+    height: 100%;
+}
+
+.donate-modal-form label{
+    font-size: 0.8em;
+}
+
+.donate-form-container h1{
+    color: #1E1F27;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.donate-modal-form input{
+    margin-top: 1vh;
+    display: block;
+    width: calc(100% - 10px);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #3F96FC;
+}
+
+.payment-method{
+    margin-top: 1.5vh;
+}
+
+.donate-modal-form .payment-method input{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.donate-modal-form input[type="radio"]{
+    display: none;
+    padding-right: 10vh;
+}
+
+.donate-modal-form input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 10vh;
+    cursor: pointer;
+}
+
+.donate-modal-form input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1E1F27;
+    border-radius: 50%;
+    background-color: #1E1F27;
+}
+
+
+.adopt-modal-form input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #37383F;
+    border-radius: 50%; 
+    background-color: #37383F;
+}
+
+#wanna-help-button{
+    background-color: #FF3D9A;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 35px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 2.5vh;
+}
+
+#cancel-button2{
+    background-color: #37383F;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 35px;
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 1.5vh;
+    margin-left: 10.3vh;
+}

@@ -294,6 +294,112 @@
 </div>
 </div>
 
+<dialog id="modal-form1" class="adopt-modal-form">
+    <div class="adopt-form-container">
+         <h1>Apply to Adopt</h1>
+
+<form id="adopt-form">                    
+          <label for="email">EMAIL<span class="obrigatorio">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="youremail@here.com">
+
+          <label for="fullname">FULL NAME<span class="obrigatorio">*</span></label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Your name">
+
+          <label for="dob">DATE OF BIRTH<span class="obrigatorio">*</span></label>
+    
+    <div class="dob-container">
+         <select id="day" name="day" required>
+         <option value="">Day</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+         <option value="13">13</option>
+         <option value="14">14</option>
+         <option value="15">15</option>
+         <option value="16">16</option>
+         <option value="17">17</option>
+         <option value="18">18</option>
+         <option value="19">19</option>
+         <option value="20">20</option>
+         <option value="21">21</option>
+         <option value="22">22</option>
+         <option value="23">23</option>
+         <option value="24">24</option>
+         <option value="25">25</option>
+         <option value="26">26</option>
+         <option value="27">27</option>
+         <option value="28">28</option>
+         <option value="29">29</option>
+         <option value="30">30</option>
+         <option value="31">31</option>
+         </select>
+
+         <select id="month" name="month" required>
+         <option value="">Month</option>
+         <option value="1">Janeiro</option>
+         <option value="2">Fevereiro</option>
+         <option value="3">Março</option>
+         <option value="4">Abril</option>
+         <option value="5">Maio</option>
+         <option value="6">Junho</option>
+         <option value="7">Julho</option>
+         <option value="8">Agosto</option>
+         <option value="9">Setembro</option>
+         <option value="10">Outubro</option>
+         <option value="11">Novembro</option>
+         <option value="12">Dezembro</option>
+         </select>
+
+         <select id="year" name="year" required>
+         <option value="">Year</option>
+         </select>
+    </div>
+
+    <div class="checkbox-container">
+         <input type="checkbox" id="checkbox-terms" name="terms" required>
+         <label for="terms" style="color: #1E1F27; font-size: 0.6em; margin-top: 2px;">I agree with <a href="#" style="color: #FF3D9A;">Privacy Policy</a> and <a href="#" style="color: #FF3D9A;">Terms of Conditions</a></label>
+    </div>
+
+    <button type="submit" id="adopt-button3" class="submit-btn"><img src="imagens/dog2-icon.svg" style="height: 2.5vh; margin-right: 10px;">I wanna Adopt!</button>
+    <button type="button" id="cancel-button" class="cancel-btn" id="cancel-modal"><img src="imagens/back-icon.svg" style="height: 2.5vh; margin-right: 12px;">Cancel</button>
+</form>
+</dialog>
+
+<dialog id="modal-form2" class="donate-modal-form">
+    <div class="donate-form-container">
+         <h1>Choose your Donate</h1>
+
+    <form>
+        <label for="email" style="color: #FF3D9A;">EMAIL<span class="obrigatorio">*</span></label>
+        <input type="email" id="email" name="email" placeholder="youremail@here" required>
+
+        <label for="amount" style="color: #FF3D9A;">HOW MUCH CAN YOU HELP?<span class="obrigatorio">*</span></label>
+        <input type="text" id="amount" name="amount" placeholder="R$ 95,00" required>
+
+        <label for="payment-method" style="color: #FF3D9A;">PAYMENT METHOD<span class="obrigatorio">*</span></label>
+
+        <div class="payment-method">
+             <input type="radio" id="pix" name="payment-method" value="pix">
+             <label for="pix" class="payment-option">Pix</label>
+
+             <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+             <label for="credit-card" class="payment-option">Credit Card</label>
+        </div>
+
+        <button type="submit" id="wanna-help-button" class="donate-button3"><i class="fa-solid fa-heart" style="color: #ffffff; margin-right: 12px;"></i>I wanna Help!</button>
+        <button type="button" class="cancel-btn" id="cancel-button2"><img src="imagens/back-icon.svg" style="margin-right: 12px;">Cancel</button>
+    </form>
+</dialog>
+
 <script src="script.js"> </script>
 
 </body>
