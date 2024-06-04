@@ -205,3 +205,214 @@ nav i{
     font-size: 2em;
     cursor: pointer;
 }
+
+.donations-screen{
+    width: 99vw;
+    height: 110vh;
+    background-color: #1E1F27;
+}
+
+.donations-title{
+    margin: auto;
+    width: 50vw;
+    height: 10vh;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.donations-title h1{
+    font-size: 3em;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+.donations-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85vw;
+    height: 83vh;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: #1E1F27;
+}
+
+.donations-element{
+    text-align: left;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 18vw;
+    height: 30.5vh;
+    padding: 20px 25px;
+}
+
+.donations-element h1{
+    display: inline-block;
+    width: 14.5vw;
+    color: #FFFFFF;
+    font-size: 1.7em;
+}
+
+.donations-element p{
+    text-align: left;
+    color: #FFFFFFCC;
+    font-size: 1.2em;
+    margin-top: 3.5vh;
+}
+
+.donations-icons{
+    height: 40px;
+}
+
+.adopt-info-screen{
+    width: 99vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.adopt-info-screen-title{
+    margin: auto;
+    width: 33vw;
+    height: 10vh;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.adopt-info-screen-title h1{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #1E1F27;
+}
+
+.adopt-content{
+    display: flex;
+    width: 99vw;
+    height: 75vh;
+}
+
+.adopt-info-screen-img{
+    width: 50%;
+}
+
+.adopt-info-screen-img img{
+    height: 70vh;
+    margin-left: 30vh;
+    margin-top: 2.5vh;
+}
+
+.adopt-info-screen-text{
+    width: 50%;
+}
+
+.adopt-info-screen-text h1{
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: #1E1F27;
+    margin-top: 6.5vh;
+    margin-left: 7vh;
+}
+
+.adopt-info-screen-text ul{
+    margin-left: 7vh;
+    margin-top: 4vh;
+}
+
+.adopt-info-screen-text ul li{
+    font-size: 1.2em;
+    color: #37383F;
+    margin-bottom: 4.5vh;
+}
+
+#adopt-button2{
+    background-color: #1E1F27;
+    color: #FFFFFF;
+    border: 2px solid #1E1F27;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 6vh;
+    margin-top: 4.5vh;
+}
+
+.difference-screen{
+    width: 99vw;
+    height: 85vh;
+    background-color: #1E1F27;
+}
+
+.difference-screen-title{
+    margin: auto;
+    text-align: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.difference-screen-title h1{
+    font-size: 3em;
+    padding-top: 8vh;
+    color: #FFFFFF;
+}
+
+.difference-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 65vh;
+    margin: auto;
+    margin-top: 10vh;
+    gap: 10vh;
+}
+
+.difference-element{
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 12vw;
+    height: 30vh;
+    padding: 35px 20px;
+}
+
+.difference-element h1{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.difference-element p{
+    color: #FFFFFFCC;
+    margin-top: 6.5vh;
+}
+
+.difference-buttons{
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 5vh;
+    cursor: pointer;
+    width: 25vh;
+}
+
+#difference-button-adopt-foster{
+    color: #1E1F27;
+    background-color: #04C27F;
+}
+
+#difference-button-volunteer{
+    color: #1E1F27;
+    background-color: #F1D06E;
+}
+
+#difference-button-donate{
+    background-color: #FF3D9A;
+    color: #FFFFFF;
+}
+
+#difference-button-fundraiser{
+    background-color: #5758F1;
+    color: #FFFFFF;
+}
