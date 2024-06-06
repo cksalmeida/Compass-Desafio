@@ -194,20 +194,21 @@ nav i{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 99vw;
-    height: 47vh;
+    width: 80vw;
+    margin: auto;
+    height: 45vh;
 }
 
 .carrosel-imagens {
     display: flex;
+    gap: 5vh;
     overflow: hidden;
     scroll-behavior: smooth;
-    width: 73vw;
+    width: 59vw;
 }
 
 .imagem-carrosel {
-    flex: 0 0 calc(100% / 3);
-    height: 40vh;
+    flex: 0 0 calc(80% / 3);
     object-fit: cover;
 }
 
@@ -648,23 +649,23 @@ footer{
     padding: 15px 20px;
 }
 
-.adopt-form-container{
+.adopt-form-container {
     width: 20vw;
     height: 100%;
-}
+  }
 
-.adopt-form-container h1{
+  .adopt-form-container h1 {
     color: #1E1F27;
-    font-size: 2.5em;
+    font-size: 2.4em;
     text-align: center;
     margin-bottom: 2vh;
-}
+  }
 
-.obrigatorio{
+  .obrigatorio {
     color: #3F96FC;
-}
+  }
 
-.adopt-modal-form input{
+  .adopt-modal-form input {
     margin-top: 1vh;
     display: block;
     width: calc(100% - 10px);
@@ -673,49 +674,56 @@ footer{
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #3F96FC;
-}
+  }
 
-.adopt-modal-form label{
+  .adopt-modal-form label {
     color: #FF3D9A;
     font-weight: bolder;
     font-size: 0.8em;
-}
+  }
 
-.dob-container select{
+  .dob-container input {
     margin-top: 1vh;
     border: 1px solid #3F96FC;
     border-radius: 5px;
     padding: 5px 10px;
     margin-bottom: 2vh;
-}
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-.adopt-modal-form .checkbox-container input{
+  .adopt-modal-form .checkbox-container input {
     display: inline-block;
     margin-top: 10px;
-}
+  }
 
-.adopt-modal-form input[type="checkbox"] {
+  .adopt-modal-form input[type="checkbox"] {
     display: none;
-}
+  }
 
-.adopt-modal-form input[type="checkbox"] + label {
+  .adopt-modal-form input[type="checkbox"] + label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
-}
+  }
 
-.adopt-modal-form input[type="checkbox"] + label:before {
+  .adopt-modal-form input[type="checkbox"] + label:before {
     content: '';
     position: absolute;
     left: 0;
     width: 20px;
     height: 20px;
     border: 2px solid #37383F;
-    border-radius: 50%; /* Faz a borda circular */
+    border-radius: 50%;
     background-color: #37383F;
-}
+  }
 
-#adopt-button3{
+  .adopt-modal-form input[type="checkbox"]:checked + label:before {
+    background-color: #04C27F;
+    border-color: #04C27F;
+  }
+
+  #adopt-button3 {
     background-color: #04C27F;
     color: #F5F5F5;
     border: none;
@@ -726,9 +734,9 @@ footer{
     font-weight: bolder;
     cursor: pointer;
     margin-top: 2.5vh;
-}
+  }
 
-#cancel-button{
+  #cancel-button {
     background-color: #37383F;
     color: #F5F5F5;
     border: none;
@@ -739,26 +747,26 @@ footer{
     font-weight: bolder;
     cursor: pointer;
     margin-top: 1.5vh;
-}
+  }
 
-.donate-form-container{
+.donate-form-container {
     font-weight: bolder;
     width: 20vw;
     height: 100%;
 }
 
-.donate-modal-form label{
+.donate-modal-form label {
     font-size: 0.8em;
 }
 
-.donate-form-container h1{
+.donate-form-container h1 {
     color: #1E1F27;
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 2vh;
 }
 
-.donate-modal-form input{
+.donate-modal-form input {
     margin-top: 1vh;
     display: block;
     width: calc(100% - 10px);
@@ -769,52 +777,66 @@ footer{
     border: 1px solid #3F96FC;
 }
 
-.payment-method{
+.payment-method {
+    display: flex;
+    gap: 10px;
     margin-top: 1.5vh;
 }
 
-.donate-modal-form .payment-method input{
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.donate-modal-form input[type="radio"]{
+.donate-modal-form input[type="radio"] {
     display: none;
-    padding-right: 10vh;
 }
 
 .donate-modal-form input[type="radio"] + label {
     position: relative;
-    padding-left: 30px;
-    padding-right: 10vh;
+    padding: 15px 35px;
+    border: 2px solid #3F96FC;
+    border-radius: 20px;
     cursor: pointer;
+    text-align: center;
+    background-color: #FFF;
+    color: #1E1F27;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.donate-modal-form input[type="radio"]:checked + label {
+    background-color: #3F96FC;
+    color: #FFF;
 }
 
 .donate-modal-form input[type="radio"] + label::before {
     content: '';
     position: absolute;
-    left: 0;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
     border: 2px solid #1E1F27;
     border-radius: 50%;
-    background-color: #1E1F27;
+    background-color: #FFF;
+    transition: background-color 0.3s;
 }
 
-#wanna-help-button{
+.donate-modal-form input[type="radio"]:checked + label::before {
+    background-color: #FF3D9A;
+    border-color: #FF3D9A;
+}
+
+#wanna-help-button {
     background-color: #FF3D9A;
     color: #F5F5F5;
+    font-weight: 700;
     border: none;
     padding: 10px 25px;
     border-radius: 35px;
     width: 100%;
     font-size: 1.2em;
-    font-weight: bolder;
     cursor: pointer;
     margin-top: 2.5vh;
 }
 
-#cancel-button2{
+#cancel-button2 {
     background-color: #37383F;
     color: #F5F5F5;
     border: none;
@@ -822,7 +844,7 @@ footer{
     border-radius: 35px;
     width: 50%;
     font-size: 1.2em;
-    font-weight: bolder;
+    font-weight: 700;
     cursor: pointer;
     margin-top: 1.5vh;
     margin-left: 10.3vh;
@@ -856,4 +878,68 @@ footer{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1.2em;
+}
+
+.adoptables-container{
+    width: 99vw;
+    height: 200vh;
+    background-color: #1E1F27;
+}
+
+.adoptables-title{
+    padding-top: 10vh;
+    margin: auto;
+    width: 32vw;
+    height: 10vh;
+    text-align: center;
+}
+
+.adoptables-title h1{
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#cancel-button4{
+    background-color: #37383F;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 35px;
+    width: 10%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 7.5vh;
+    margin-left: 43.6vw;
+}
+
+.adoptables-pets-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5.6vh;
+    width: 75vw;
+    height: 125vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+#see-more-btn{
+    background-color: #FF3D9A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 35px;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 10vh;
+}
+
+.adoptables-pets-section{
+    text-align: center;
+    color: #FFFFFF;
 }
