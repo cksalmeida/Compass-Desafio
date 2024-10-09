@@ -1,4 +1,4 @@
-# <img src="./src/assets/FurniroLogo.svg" alt="Logotype" style="margin-left: 20px; vertical-align: middle; width: 30px" /> Rescue Center
+# <img src="./imagens/logo.png" alt="Logotype" style="margin-left: 20px; vertical-align: middle; width: 30px" /> Rescue Center
 
 This project is a landing page for an animal rescue center. It was the first challenge proposed in an internship program, with the purpose of putting into practice some of the basic technologies that are used in the job market.
 
